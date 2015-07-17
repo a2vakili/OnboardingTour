@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "IFTTTJazzHands.h"
+#import "TourViewController.h"
+
 
 @interface ViewController ()
 
@@ -16,7 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+  
+    
+}
+
+
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    TourViewController *tourViewController = [[TourViewController alloc]init];
+    [self presentViewController:tourViewController animated:YES completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
