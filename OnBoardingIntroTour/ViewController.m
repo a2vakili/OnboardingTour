@@ -25,7 +25,6 @@
 
 
 -(void)viewDidAppear:(BOOL)animated{
-    
     [super viewDidAppear:animated];
     
     TourViewController *tourViewController = [[TourViewController alloc]init];
